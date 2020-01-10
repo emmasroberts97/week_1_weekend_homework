@@ -7,12 +7,7 @@ def total_cash(pet_shop)
 end
 
 def add_or_remove_cash(pet_shop, amount)
-  if amount > 0
   pet_shop[:admin][:total_cash] += amount
-  elsif amount < 0
-  amount = amount * -1
-  pet_shop[:admin][:total_cash] -= amount
-  end
 end
 
 def pets_sold(pet_shop)
