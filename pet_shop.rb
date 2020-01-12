@@ -84,6 +84,7 @@ def sell_pet_to_customer(pet_shop, pet, customer)
       add_pet_price_to_pet_shop(pet_shop, pet)
       add_pet_to_pets_sold(pet_shop)
       add_pet_to_customer(customer, pet)
+      remove_pet_by_name(pet_shop, pet[:name])
     end
   end
 end
